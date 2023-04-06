@@ -2,7 +2,7 @@
     font-family: 'Oswald';
 }
 .navbar{
-    background:#421c15;
+    background: black;
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -13,13 +13,16 @@
     font-size: 20px;
     margin: 15px;
     color: white;
-    background-image: './goro.png';
+    background-image: './src/goro.png';
 }
 .nav_items a{
     margin: 15px;
     color: white;
     position: relative;
     text-decoration: none;
+}
+.nav_items a:hover{
+    color: gold;
 }
 .nav_toggle{
     display: none;
