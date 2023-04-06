@@ -7,7 +7,7 @@ const Navbar = () => {
             <div className="nav_items">
                 <a href="#"> INICIO</a>
                 <a href="#"> JUEGOS</a>
-                <a href="#"> CONTACTO</a>
+                <a href="#"> PELICULAS</a>
             </div>
             <div className="nav_toggle" >
                 <span></span>
