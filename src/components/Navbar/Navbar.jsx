@@ -3,11 +3,12 @@ import "./Navbar.css"
 const Navbar = () => {
     return(
         <div className="navbar">
-            <div className="nav_logo">Goro's Gaming Lair</div>
+            <div className="nav_logo"></div>
             <div className="nav_items">
                 <a href="#"> INICIO</a>
                 <a href="#"> JUEGOS</a>
                 <a href="#"> PELICULAS</a>
+                <a href="#"> CARRITO</a>
             </div>
             <div className="nav_toggle" >
                 <span></span>
@@ -17,5 +18,5 @@ const Navbar = () => {
         </div>
     )
 }
-export default Navbar
+export default Navbar;
 
