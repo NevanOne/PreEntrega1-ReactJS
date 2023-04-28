@@ -1,24 +1,3 @@
-.cart-widget {
-    position: relative;
-  }
-  
-  .cart-icon {
-    font-size: 1.5rem;
-    margin-right: 0.5rem;
-  }
-  
-  .cart-notification {
-    position: absolute;
-    top: -0.5rem;
-    right: -0.5rem;
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: red;
-    color: white;
-    font-size: 0.75rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-  }
-  
+.carrito{
+    font-size: 50px;
+}

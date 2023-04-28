@@ -1,14 +1,19 @@
-import React from "react";
 import "./Navbar.css"
-const Navbar = () => {
+import React from 'react'
+import './Navbar.css'
+import { Link } from 'react-router-dom'
+import { CartWidget } from "../CartWidget/CartWidget"
+
+
+export const Navbar = () => {
     return(
         <div className="navbar">
             <div className="nav_logo"></div>
             <div className="nav_items">
-                <a href="#"> INICIO</a>
-                <a href="#"> JUEGOS</a>
-                <a href="#"> PELICULAS</a>
-                <a href="#"> CARRITO</a>
+            <Link className='link' to="./Components/Inicio">Inicio</Link>
+            <Link className='link' to="/productos/Juegos">Juegos</Link>
+            <Link className='link' to="/">Peliculas</Link>
+            <Link className='link' to='/CartScreen'><CartWidget/></Link>
             </div>
             <div className="nav_toggle" >
                 <span></span>
@@ -18,5 +23,5 @@ const Navbar = () => {
         </div>
     )
 }
-export default Navbar;
 
+export default Navbar;
