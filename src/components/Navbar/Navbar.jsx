@@ -10,7 +10,7 @@ export const Navbar = () => {
         <div className="navbar">
             <div className="nav_logo"></div>
             <div className="nav_items">
-            <Link className='link' to="/">Inicio</Link>
+            <Link className='link' to="/Inicio">Inicio</Link>
             <Link className='link' to="/productos/Juegos">Juegos</Link>
             <Link className='link' to="/productos/Peliculas">Peliculas</Link>
             <Link className='link' to='/cart'><CartWidget/></Link>
