@@ -53,7 +53,7 @@ export const stock = [
         description: "Pelicula 1",
         price: 4500,
         image: "https://media.vandal.net/m/3557/201186111756_1.jpg",
-        categoria: "Juegos",
+        categoria: "Peliculas",
         stock: 10,
     },
     {
@@ -61,7 +61,7 @@ export const stock = [
         description: "Pelicula 2",
         price: 5000,
         image: "https://m.media-amazon.com/images/I/51uZOV8M61L.jpg",
-        categoria: "Juegos",
+        categoria: "Peliculas",
         stock: 10,
     },
     {
@@ -69,7 +69,7 @@ export const stock = [
         description: "Pelicula 3",
         price: 2300,
         image: "https://m.media-amazon.com/images/I/81XREvo5PIS._SY445_.jpg",
-        categoria: "Juegos",
+        categoria: "Peliculas",
         stock: 10, 
     },
     {
@@ -77,7 +77,7 @@ export const stock = [
         description: "Pelicula 4",
         price: 2000,
         image: "https://c8.alamy.com/compes/2h7agt7/video-juego-shooter-para-windows-pc-dvd-cubierta-de-2000s-crysis-warhead-desarrollado-por-crytek-lanzado-en-2008-2h7agt7.jpg",
-        categoria: "Juegos",
+        categoria: "Peliculas",
         stock: 10,
     },
     {
@@ -85,7 +85,7 @@ export const stock = [
         description: "Pelicula 5",
         price: 3255,
         image: "https://rukminim1.flixcart.com/image/416/416/jpa2w7k0/physical-game/g/r/h/standard-edition-god-of-war-2-pc-dvd-full-game-windows-original-imafbgty9tytzm9j.jpeg?q=70",
-        categoria: "Juegos",
+        categoria: "Peliculas",
         stock: 10,
     },
     {
@@ -93,7 +93,7 @@ export const stock = [
         description: "Pelicula 6",
         price: 4000,
         image: "https://http2.mlstatic.com/D_NQ_NP_633037-MLA29337798530_022019-O.webp",
-        categoria: "Juegos",
+        categoria: "Peliculas",
         stock: 10,
     },
 ]
