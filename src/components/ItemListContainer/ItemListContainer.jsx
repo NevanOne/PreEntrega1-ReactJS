@@ -11,33 +11,30 @@ export const ItemListContainer = ({greeting}) => {
 
   const [loading, setLoading] = useState(false)
 
-  const {categoryId} = useParams()
+  const {categoriaId} = useParams()
 
 
   useEffect(() =>{
-// iniciamos el efecto montaje, con un loading en "true"
     setLoading(true)
     pedirProductos()
       .then((res) =>{
-        // Imprimos la respuesta y la guardamos en el hook
-        if(categoryId){
-          setItems(res.filter(prod => prod.category === categoryId)  )
+        if(categoriaId){
+          setItems(res.filter(prod => prod.categoria === categoriaId)  )
         }else{
           setItems(res)
         }
-        // console.log(res)
+        // console.log(res) , se consologuea el error
       })
-      // Consologueamos errores
       .catch((error) => console.log(error))
       .finally(() =>{setLoading(false)})
-  }, [categoryId])
+  }, [categoriaId])
 
 
 
 
   return (
     <>
-    {/* Nuestro componente arranca con el loading en "true" y cuando resulve, imprime en pantalla todo nuestro componente ItemList (donde mapeamos cada uno de los productos) */}
+    {}
       {
         loading
         ?<div className='spinner'><ImSpinner2/></div>

@@ -12,7 +12,7 @@ export const Navbar = () => {
             <div className="nav_items">
             <Link className='link' to="./Components/Inicio">Inicio</Link>
             <Link className='link' to="/productos/Juegos">Juegos</Link>
-            <Link className='link' to="/">Peliculas</Link>
+            <Link className='link' to="/productos/Peliculas">Peliculas</Link>
             <Link className='link' to='/CartScreen'><CartWidget/></Link>
             </div>
             <div className="nav_toggle" >

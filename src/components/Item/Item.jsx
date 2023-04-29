@@ -4,7 +4,6 @@ import { Card, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 export const Item = ({ id, description, price, image, categoria }) => {
-  // Pasamos mediante props, cada propiedad de nuestro productos(objetos) y lo colocamos por props en nuestro return
   return (
     <div className='item'>
       <Card style={{ width: '19rem' }}>

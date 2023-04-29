@@ -5,8 +5,6 @@ import { ItemCount } from '../ItemCount/ItemCount'
 import {CartContext} from '../context/CartContext'
 
 export const ItemDetail = ({ id, description, price, image, categoria, stock }) => {
-  // Pasamos mediante props, cada propiedad de nuestro productos(objetos) y lo colocamos por props en nuestro return
-
 
   const navigate = useNavigate()
 
@@ -14,13 +12,7 @@ export const ItemDetail = ({ id, description, price, image, categoria, stock }) 
     navigate(-1)
   }
 
-  // ______________________
-
-  // Empezamos a consumir las funcionalidades del contexto
-
   const {addToCart} = useContext(CartContext)
-
-  // __________________________________
 
   const [counter, setCounter] = useState(0)
 
