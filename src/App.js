@@ -6,6 +6,7 @@ import { Navbar } from "./components/Navbar/Navbar";
 import { ItemCount } from './components/ItemCount/ItemCount';
 import {BrowserRouter as Router,Routes,Navigate,Route,} from 'react-router-dom'
 import { CartProvider } from './components/context/CartContext'
+import {CartScreen} from './components/CartScreen/CartScreen'
 // 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
             <Route path='/productos/:categoriaId' element={<ItemListContainer />} />
             <Route path='/detail/:itemId' element={<ItemDetailContainer />} />
             <Route path='/counter' element={<ItemCount />} />
-            <Route path='*' element={<Navigate to='/' />} />
+            <Route path='/cart' element={<CartScreen></CartScreen>} />
           </Routes>
         </Router>
       </div>
