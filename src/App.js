@@ -5,8 +5,9 @@ import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetail
 import { Navbar } from "./components/Navbar/Navbar";
 import { ItemCount } from './components/ItemCount/ItemCount';
 import {BrowserRouter as Router,Routes,Navigate,Route,} from 'react-router-dom'
-import { CartProvider } from './components/context/CartContext'
-import {CartScreen} from './components/CartScreen/CartScreen'
+import { CartProvider } from './components/context/CartContext';
+import {CartScreen} from './components/CartScreen/CartScreen';
+import Inicio from './components/Inicio/Inicio';
 // 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Router>
           <Navbar />
           <Routes>
+            <Route path="/Inicio" element={<Inicio/>} />
             <Route path='/' element={<ItemListContainer />} />
             <Route path='/productos/:categoriaId' element={<ItemListContainer />} />
             <Route path='/detail/:itemId' element={<ItemDetailContainer />} />
@@ -28,4 +30,4 @@ function App() {
   );
 }
 
-export default App;
+export default App

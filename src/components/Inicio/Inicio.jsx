@@ -1,19 +1,15 @@
-import React from 'react'
-import {BrowserRouter as Router,Routes,Navigate,Route,} from 'react-router-dom'
-import Navbar from '../Navbar/Navbar'
+import React from 'react';
+import Navbar from '../Navbar/Navbar';
+import { Link } from 'react-router-dom'
+import {Router,Routes,Navigate,Route} from 'react-router-dom'
+import {BrowserRouter} from 'react-router-dom'
+
 const Inicio = () => {
   return (
     <div>
-      <Router>
-      <Navbar>
-        <Routes>
-        <h2>Inicio</h2>
-        </Routes>
-      </Navbar>
-      </Router>
-      
+      <h2>Inicio</h2>
     </div>
-  )
+  );
 }
 
 export default Inicio;
