@@ -49,7 +49,7 @@ export const stock = [
         stock: 10,
     },
     {
-        id: 11,
+        id: 7,
         description: "Harry Potter y la Piedra Filosofal",
         price: 350,
         image: "https://images.moviesanywhere.com/143cdb987186a1c8f94d4f18de211216/fdea56fa-2703-47c1-8da8-70fc5382e1ea.jpg",
@@ -57,7 +57,7 @@ export const stock = [
         stock: 10,
     },
     {
-        id: 12,
+        id:  8,
         description: "Harry Potter y la Camara de los Secretos",
         price: 5000,
         image: "https://m.media-amazon.com/images/M/MV5BMjE0YjUzNDUtMjc5OS00MTU3LTgxMmUtODhkOThkMzdjNWI4XkEyXkFqcGdeQXVyMTA3MzQ4MTc0._V1_FMjpg_UX1000_.jpg",
@@ -65,7 +65,7 @@ export const stock = [
         stock: 10,
     },
     {
-        id: 13,
+        id: 9,
         description: "Rapidos y Furiosos 6",
         price: 2300,
         image: "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/2a711d2b91761c98205aa9f8b62e8cb47f423cc8f7697bfac5e76b71af850fda._RI_V_TTW_.jpg",
