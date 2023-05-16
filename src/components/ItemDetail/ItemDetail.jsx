@@ -3,8 +3,9 @@ import {useNavigate} from 'react-router-dom'
 import { Card, Button } from 'react-bootstrap'
 import { ItemCount } from '../ItemCount/ItemCount'
 import {CartContext} from '../context/CartContext'
+import { Link } from 'react-router-dom';
 
-export const ItemDetail = ({ id, description, price, image, categoria, stock }) => {
+export const ItemDetail = ({ id, name, description, price, image, categoria, stock }) => {
 
   const navigate = useNavigate()
 
@@ -19,6 +20,7 @@ export const ItemDetail = ({ id, description, price, image, categoria, stock }) 
   const sumarAlCarrito = () =>{
         const newItem = {
           id,
+          name,
           description,
           image,
           price,
@@ -36,7 +38,7 @@ export const ItemDetail = ({ id, description, price, image, categoria, stock }) 
       <Card style={{ width: '25rem' }}>
         <Card.Img variant="top" src={image} />
         <Card.Body>
-          <Card.Title>{id}</Card.Title>
+          <Card.Title>{name}</Card.Title>
           <Card.Title>{description}</Card.Title>
           <Card.Title>{price}</Card.Title>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea error totam quibusdam doloribus, alias aperiam exercitationem laboriosam illum similique eos, delectus vitae odit maxime, repellendus iusto quisquam placeat blanditiis. Cupiditate! </p>
@@ -45,6 +47,9 @@ export const ItemDetail = ({ id, description, price, image, categoria, stock }) 
           <Button onClick={sumarAlCarrito}>Agregar al carrito</Button>
         </Card.Body>
         <Button onClick={volverHaciaAtras} className='btn btn-sucess'>Volver atras</Button>
+        <Link to='/cart' className='btn btn-info'>
+          Ir al Carrito
+        </Link>
       </Card>
     </div>
   )
